@@ -1,4 +1,7 @@
 GET http://localhost:3001/subs
+
+###
+GET https://test-app-jorge.herokuapp.com/subs
 ###
 GET http://localhost:3001/subs/5f177ff464e35c2a8c6bf785
 ###

@@ -15,4 +15,4 @@ app.use(express.json())
 const subs = require('./subscribers/subs')
 app.use('/subs', subs)
 
-app.listen(3001, () => console.log('server Started'))
+app.listen(process.env.PORT || 3001, () => console.log('server Started'))

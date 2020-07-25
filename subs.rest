@@ -1,0 +1,23 @@
+GET http://localhost:3001/subs
+###
+GET http://localhost:3001/subs/5f177ff464e35c2a8c6bf785
+###
+POST http://localhost:3001/subs
+Content-Type: application/json
+
+{
+    "name": "Jorge",
+    "subscribedToChannel": "JorgeYT"
+}
+
+###
+DELETE  http://localhost:3001/subs/5f177ff464e35c2a8c6bf785
+
+###
+PATCH  http://localhost:3001/subs/5f178856a2b1132cf8f98af9
+Content-Type: application/json
+
+{
+    "name": "Jose",
+    "subscribedToChannel": "CHACHI"
+}

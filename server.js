@@ -12,7 +12,10 @@ db.once('open', () => console.log('Connected to database'));
 const app = express()
 app.use(express.json())
 
-const subs = require('./subscribers/subs')
+const subs = require('./routes/subs')
+const index = require('./routes/index')
 app.use('/subs', subs)
+app.use('/', index)
+
 
 app.listen(process.env.PORT || 3001, () => console.log('server Started'))
